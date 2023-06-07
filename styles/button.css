@@ -1,0 +1,40 @@
+.changeCity {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.btnTryAgain {
+  width: 140px;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #4c01e0;
+  border: none;
+  cursor: pointer;
+}
+
+.btnFind {
+  width: 140px;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #4c01e0;
+  border: none;
+  cursor: pointer;
+}

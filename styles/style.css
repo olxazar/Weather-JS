@@ -1,0 +1,104 @@
+@import url(./button.css);
+@import url(./input.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(150.64deg, #8e2de2 0%, #4a00e0 100%);
+  background-repeat: no-repeat;
+}
+
+main {
+  padding: 40px 0;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 150px;
+}
+.window {
+  margin: 0 auto;
+  text-align: center;
+  /* display: none; */
+}
+
+.temp {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 87px;
+  color: #ffffff;
+}
+
+.weather {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+.error__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.errorCity {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #c9c8c8;
+  margin-bottom: 30px;
+}
+
+.windowSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.show {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+
+.hiddenSearch {
+  display: none;
+}
+
+.showed {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
