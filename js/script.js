@@ -1,5 +1,5 @@
-const weatherKey = "c70f1cec0035e03b2109578b4b50964e";
-const geoKey = "at_uTv1N0dSb3ERjzJULR1hlfKRxKgPe";
+const WEATHER_KEY = "c70f1cec0035e03b2109578b4b50964e";
+const GEO_KEY = "at_uTv1N0dSb3ERjzJULR1hlfKRxKgPe";
 
 if (!navigator.geolocation) {
   document.body.innerHTML = "Ваш браузер не поддерживает геолокацию";
@@ -17,7 +17,7 @@ function success(position) {
 
 // Функция получения погоды с помощью координат
 function getWeatherByCoordinates(latitude, longitude) {
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${weatherKey}`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${WEATHER_KEY}`;
 
   fetch(weatherUrl)
     .then((response) => response.json())
@@ -63,7 +63,7 @@ function error() {
 
 // Функция получения погоды по IP
 function getWeatherByIP() {
-  const geoUrl = `https://geo.ipify.org/api/v2/country,city?apiKey=${geoKey}`;
+  const geoUrl = `https://geo.ipify.org/api/v2/country,city?apiKey=${GEO_KEY}`;
 
   fetch(geoUrl)
     .then((response) => response.json())
@@ -81,7 +81,7 @@ function getWeatherByIP() {
 // Функция получения погоды по городу
 
 function getWeatherByCity(city) {
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherKey}`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_KEY}`;
 
   fetch(weatherUrl)
     .then((response) => response.json())
@@ -127,7 +127,7 @@ function printWeather() {
   const input = document.querySelector(".input");
   const city = input.value;
   input.value = "";
-  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherKey}`;
+  const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_KEY}`;
   const windowSearch = document.querySelector(".windowSearch");
   windowSearch.classList.add("hiddenSearch");
 
